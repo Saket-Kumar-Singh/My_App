@@ -9,3 +9,6 @@ def hash(password : str):
 
 def match(user_password, stored_password):
     return pbkdf2_sha256.verify(user_password, stored_password)
+
+SECRET_KEY = "HCOIED3U2ufhriej2#ioqj3$kso"
+ALGORITHM = "HS256"
