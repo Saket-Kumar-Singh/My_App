@@ -21,10 +21,10 @@ while True:
         print("The error was", error)    
         time.sleep(3)
 
-from .routers import users, login
+from .routers import users, login, oauth
 app.include_router(users.router)
 app.include_router(login.router)
-
+app.include_router(oauth.router)
 @app.get("/")
 async def root():
     return {"message": "Hello mister please give us what you want"}

@@ -14,3 +14,7 @@ class userOut(BaseModel):
 class userLogin(BaseModel):
     user_name : EmailStr
     user_password : str
+
+class TokenData(BaseModel):
+    access_token : str
+    token_type : str
